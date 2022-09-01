@@ -41,8 +41,10 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       body: SafeArea(
         child: current! == ConnectivityResult.wifi
-            ? const WebView(
-                initialUrl: 'http://192.168.1.1/',
+            ? Center(
+                child: const WebView(
+                  initialUrl: 'http://192.168.1.1/',
+                ),
               )
             : current! == ConnectivityResult.mobile
                 ? const MobileNetworkOffScreen()

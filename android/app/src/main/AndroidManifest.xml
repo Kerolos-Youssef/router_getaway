@@ -1,5 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.keroles_youssef.home_router">
+    <uses-permission android:name="android.permission.INTERNET" />
    <application
         android:label="Router Getaway"
         android:name="${applicationName}"
